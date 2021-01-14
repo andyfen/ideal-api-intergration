@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "start": "node server/index.js",
+    "start:webhooks": "node scripts/webhook-proxy.js & node server/index.js"
+  },
+  "licenses": [
+    {
+      "type": "Apache 2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+  ],
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ngrok": "^3.4.0"
+  }
+}

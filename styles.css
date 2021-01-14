@@ -1,0 +1,45 @@
+/* Base */
+.container {
+  max-width: 30em;
+}
+
+.btn-ideal {
+  color: #000;
+  background-color: #d5d5d5;
+  border: 1px solid #c5c5c5;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  font-size: 1rem;
+  padding-top: 20vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color:white;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  font-size: 14px;
+  color: #2c2e2f;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}

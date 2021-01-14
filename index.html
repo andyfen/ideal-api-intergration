@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Checkout</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body class="bg-light">
+  <main class="container">
+
+
+    <form id="ideal-form">
+      <div class="row">
+
+          <div class="row g-3">
+
+            <div class="col-md-12">
+
+              <div class="d-flex justify-content-start align-items-center">
+       
+                <div class="justify-content-start align-items-center"><img style="width: 25px; height: auto; margin-right: 10px;" id="checkout-logo"
+                  src="https://www.paypalobjects.com/images/checkout/latinum/Altpay_logo_iDEAL.svg" /></div>
+                  
+                  <div class="d-flex justify-content-start align-items-center">
+                    Pay with iDEAL</div>
+              </div>
+          </div>
+  
+
+            <div class="col-md-12">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name" value="" required="">
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Last Name" value="" required="">
+              <div class="invalid-feedback">
+                Valid last name is required.
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="bic" class="form-label">Bank</label>
+              <select class="form-select" name="bic" required="" aria-label="Bank select example" id="bic">
+                <option value="" disabled selected>Select your bank</option>
+                <option value="RABONL2U">Rabobank</option>
+                <option value="ABNANL2A">ABN AMRO</option>
+                <option value="FVLBNL22">Van Lanschot Bankiers</option>
+                <option value="TRIONL2U">Triodos Bank</option>
+                <option value="FVLBNL22">Van Lanschot Bankiers</option>
+                <option value="INGBNL2A">ING Bank</option>
+                <option value="SNSBNL2A">SNS Bank</option>
+                <option value="ASNBNL21">ASN</option>
+                <option value="RBRBNL21">RegioBank</option>
+                <option value="KNABNL2H">Knab</option>
+                <option value="BUNQNL2A">Bunq</option>
+                <option value="MOYONL21">RegioBank</option>
+                <option value="HANDNL2A">Handelsbanken</option>
+              </select>
+            </div>
+
+
+            <div class="col-md-12">
+
+              <button type="submit" id="ideal-btn" class="w-100 btn btn-ideal btn-lg">
+                Pay with 
+                <img style="width: 21px; height: auto; margin-left: 12px;" id="checkout-logo"
+                src="https://www.paypalobjects.com/images/checkout/latinum/Altpay_logo_iDEAL.svg" />
+            
+              </button>
+
+              <div class="overlay loading hidden" id="loading">
+                <div class="spinner-border"  role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+
+            </div>
+
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+
+  </main>
+</body>
+
+</html>
